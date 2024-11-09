@@ -1,43 +1,87 @@
 ✨ Abracadabra ✨
-An LLM that Creates Magical Playlists with Llama 2, RAG, Chroma DB, and NeMo Curator
-Abracadabra is a custom language model (LLM) powered by Llama 2, designed to create personalized playlists based on user context and emotions. It utilizes a Retrieval-Augmented-Generation (RAG) system with LlamaIndex, Chroma DB, and NVIDIA’s NeMo Curator to handle data cleaning and processing.
+An LLM for Creating Magical Playlists with Llama 2, RAG, Chroma DB, and NeMo Curator
+Welcome to Abracadabra! This is a custom language model (LLM) powered by Llama 2 that generates personalized playlists based on user mood, context, and emotional preference. It leverages a Retrieval-Augmented-Generation (RAG) architecture with LlamaIndex, Chroma DB, and NVIDIA’s NeMo Curator for data cleaning and processing.
 
 🎩 How It Works
+Abracadabra combines multiple advanced AI techniques to provide a seamless playlist creation experience:
+
 Data Curation with NeMo Curator 🎶
-First, we process and normalize over half a million songs using NeMo Curator. This involves cleaning artist and song title data for consistency and search precision.
+Cleaned and normalized a dataset of over half a million songs, ensuring consistency in artist names and song titles.
 
 Embedding Generation and Dataset Creation 🧠
-Avoiding the need for OpenAI’s API, we generate embeddings directly within our dataset. This enables fast, local access to information without external dependencies.
+Generated embeddings directly within the dataset to enable local, API-free access to song information.
 
 Indexing with LlamaIndex 📚
-With generated embeddings, we index the dataset using LlamaIndex, facilitating efficient semantic search and retrieval.
+Indexed the dataset with LlamaIndex, allowing for efficient and fast semantic search.
 
-Database in Chroma DB ⚡️
-To optimize the speed and efficiency of playlist generation, we store the dataset in Chroma DB. This significantly reduces model response times, enabling a smooth user interaction.
+Database Optimization with Chroma DB ⚡️
+Stored the dataset in Chroma DB to further optimize retrieval speed, making playlist generation faster and more responsive.
 
 📊 Dataset Features
-Each song in our dataset includes over 14 unique attributes, such as genre, tempo, key, sentiment, and additional musical and contextual details. This diversity allows the model to craft playlists precisely tailored to the user’s mood and context.
+Each song in the Abracadabra dataset includes detailed attributes for a highly personalized music recommendation experience:
+
+Feature	Description	Example
+Artist(s)	Name of the artist(s) performing the song	King Crimson
+Song	Title of the song	ConstruKction Of Light
+Text	Lyrics or main text of the song	"Pain, day, sky..."
+Length	Duration of the song	08:40
+Emotion	Main emotion associated with the song	Sadness
+ISRC	International Standard Recording Code for unique identification	GBCTX1600054
+Genre	Genres associated with the song	Rock, Progressive Rock, Jazz
+Album	Album in which the song is featured	The ConstruKction of Light
+Release Date	Release date of the song	18th March 2016
+Key	Musical key of the song	B minor
+Tempo	Beats per minute (BPM)	160
+Loudness (dB)	Loudness level in decibels	-11.99 dB
+Time Signature	Time signature used in the song	5/4
+Song Number	Track position in the album	2 of 9
+Explicit	Indicates if the song has explicit content	No
+Popularity	Popularity score based on metrics	23
+Energy	Energy level of the song (0-100)	63
+Danceability	Danceability score (0-100)	50
+Positiveness	Measure of positivity in the song (0-100)	50
+Speechiness	Degree of speech presence in the song (0-100)	4
+Liveness	Likelihood the track was performed live (0-100)	14
+Acousticness	Measure of acoustic sound presence (0-100)	11
+Instrumentalness	Likelihood of being instrumental (0-100)	1
+Good for Party	Suitability for party playlists (binary)	0
+Good for Work/Study	Suitability for work or study playlists (binary)	0
+Good for Relaxation/Meditation	Suitability for relaxation or meditation playlists (binary)	0
+Good for Exercise	Suitability for exercise playlists (binary)	0
+Good for Running	Suitability for running playlists (binary)	0
+Good for Yoga/Stretching	Suitability for yoga/stretching playlists (binary)	0
+Good for Driving	Suitability for driving playlists (binary)	0
+Good for Social Gatherings	Suitability for social gatherings playlists (binary)	0
+Good for Morning Routine	Suitability for morning routine playlists (binary)	0
+Similar Songs	List of similar songs with artist names and similarity scores	Similar Artist 1: King Crimson, Similarity Score: 0.9997
+This detailed dataset allows Abracadabra to create playlists that are finely tuned to user preferences based on mood, activity, and listening context.
 
 🚀 Implementation
-To make interaction easy, Abracadabra is implemented on Google Colab, using Gradio as the user interface. This setup allows for:
+Abracadabra is implemented on Google Colab with Gradio as the user interface, making it easy to interact with the model. Key functionalities include:
 
-Creating playlists based on emotions (e.g., sadness, joy, nostalgia)
-Generating playlists for specific contexts (e.g., “study music,” “workout music”)
-Try it out directly here: Abracadabra Notebook on Colab
-
+Emotion-Based Playlists: Create playlists for moods like sadness, joy, nostalgia, and more.
+Context-Based Playlists: Generate playlists for specific activities (e.g., “study music,” “workout music”).
+🔗 Try it out here on Google Colab
 ⚙️ Requirements
+To get started with Abracadabra, make sure you have the following:
+
 Chroma DB Database
-To run this project, download the Chroma DB database here.
+
+Download the preprocessed Chroma DB database here.
 
 Hugging Face Authorization Token
-A Hugging Face token with authorization is required to use Llama 2. You can obtain one by creating an account and requesting access through Hugging Face.
+
+Note: A Hugging Face token with authorization is required to use Llama 2. Obtain one by creating an account on Hugging Face and requesting access.
 
 Libraries and Dependencies
-Ensure that all required dependencies are installed in the Google Colab notebook, included in the repository.
+
+Ensure that all necessary dependencies are installed in the Google Colab notebook, provided in the repository.
 
 🎉 Try Abracadabra!
-Open the notebook on Google Colab, load the database, and start creating magical playlists tailored to your mood or any context you choose. 🪄
+Get started by opening the notebook on Google Colab, loading the Chroma DB database, and creating magical playlists based on your mood or any activity you choose. 🪄
 
 📝 Additional Notes
-Abracadabra is ideal for exploring the intersection of AI and music, providing a personalized musical experience without relying on external APIs. Leveraging RAG, Chroma DB, and thorough data cleaning with NeMo Curator, responses are both fast and attuned to each user’s unique taste.
+Abracadabra offers a unique intersection between AI and music, allowing for a tailored and immersive musical experience without relying on external APIs. Using RAG, Chroma DB, and thorough data curation with NeMo Curator, the model provides fast and personalized responses that adapt to each user's taste.
+
+Enjoy your musical journey with Abracadabra! 🎶
 
