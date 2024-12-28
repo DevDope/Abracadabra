@@ -1,5 +1,7 @@
-
 # ✨ Abracadabra ✨
+
+![Abracadabra Banner](https://imgur.com/d0uJBFU.png)
+
 ### An LLM for Creating Magical Playlists with Llama 2, RAG, Chroma DB, and NeMo Curator
 
 Welcome to **Abracadabra**! This is a custom language model (LLM) powered by **Llama 2** that generates personalized playlists based on user mood, context, and emotional preference. It leverages a **Retrieval-Augmented-Generation (RAG)** architecture with **LlamaIndex**, **Chroma DB**, and **NVIDIA’s NeMo Curator** for data cleaning and processing.
