@@ -94,7 +94,7 @@ To get started with **Abracadabra**, make sure you have the following:
 ---
 📂 Dataset
 The base dataset used in Abracadabra is now publicly available on Kaggle:
-# 🔗 [900K+ Spotify Dataset with Lyrics, Emotions, and Audio Features](https://www.kaggle.com/datasets/devdope/900k-spotify/data)
+### 🔗 [900K+ Spotify Dataset with Lyrics, Emotions, and Audio Features](https://www.kaggle.com/datasets/devdope/900k-spotify/data)
 You can use this dataset for:
 
 Emotion-aware playlist generation
