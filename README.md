@@ -37,7 +37,6 @@ Each song in the **Abracadabra** dataset includes detailed attributes for a high
 | **Text**                    | Lyrics or main text of the song                                                             | "Pain, day, sky..."                   |
 | **Length**                  | Duration of the song                                                                        | 08:40                                 |
 | **Emotion**                 | Main emotion associated with the song                                                       | Sadness                               |
-| **ISRC**                    | International Standard Recording Code for unique identification                             | GBCTX1600054                          |
 | **Genre**                   | Genres associated with the song                                                             | Rock, Progressive Rock, Jazz          |
 | **Album**                   | Album in which the song is featured                                                         | The ConstruKction of Light            |
 | **Release Date**            | Release date of the song                                                                    | 18th March 2016                       |
@@ -93,7 +92,25 @@ To get started with **Abracadabra**, make sure you have the following:
   > Ensure that all necessary dependencies are installed in the Google Colab notebook, provided in the repository.
 
 ---
+📂 Dataset
+The base dataset used in Abracadabra is now publicly available on Kaggle:
 
+🔗 900K+ Spotify Dataset with Lyrics, Emotions, and Audio Features
+
+
+You can use this dataset for:
+
+Emotion-aware playlist generation
+
+Music recommendation systems
+
+LLM/RAG-based musical applications
+
+NLP and emotion classification research using lyrics
+
+To explore or download the data, visit the Kaggle page linked above.
+
+---
 ## 🎉 Try Abracadabra!
 
 Open the notebook on Google Colab, load the Chroma DB database, and start creating magical playlists based on your mood or any activity you choose. 🪄
