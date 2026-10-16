@@ -1,12 +1,22 @@
-# ✨ Abracadabra ✨
+<div align="center">
 
-![Abracadabra Banner](https://imgur.com/d0uJBFU.png)
+# Abracadabra
+
+![Abracadabra banner](docs/assets/banner.png)
 
 ### An LLM for Creating Magical Playlists with Llama 2, RAG, Chroma DB, and NeMo Curator
+
+</div>
+
+![Overview](docs/assets/overview.png)
+
+## Overview
 
 Welcome to **Abracadabra**! This is a custom language model (LLM) powered by **Llama 2** that generates personalized playlists based on user mood, context, and emotional preference. It leverages a **Retrieval-Augmented-Generation (RAG)** architecture with **LlamaIndex**, **Chroma DB**, and **NVIDIA’s NeMo Curator** for data cleaning and processing.
 
 ---
+
+![Section](docs/assets/architecture.png)
 
 ## 🎩 How It Works
 
@@ -25,6 +35,8 @@ Welcome to **Abracadabra**! This is a custom language model (LLM) powered by **L
    Stored the dataset in **Chroma DB** to further optimize retrieval speed, making playlist generation faster and more responsive.
 
 ---
+
+![Section](docs/assets/features.png)
 
 ## 📊 Dataset Features
 
@@ -67,6 +79,8 @@ Each song in the **Abracadabra** dataset includes detailed attributes for a high
 
 ---
 
+![Section](docs/assets/tech-stack.png)
+
 ## 🚀 Implementation
 
 **Abracadabra** is implemented on **Google Colab** using **Gradio** as the user interface, making it easy to interact with the model. Key functionalities include:
@@ -108,6 +122,8 @@ NLP and emotion classification research using lyrics
 To explore or download the data, visit the Kaggle page linked above.
 
 ---
+![Section](docs/assets/results.png)
+
 ## 🎉 Try Abracadabra!
 
 Open the notebook on Google Colab, load the Chroma DB database, and start creating magical playlists based on your mood or any activity you choose. 🪄
